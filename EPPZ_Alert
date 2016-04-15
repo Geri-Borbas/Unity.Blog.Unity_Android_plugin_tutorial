@@ -1,0 +1,23 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{FF41CA27-C95D-1E70-BED1-E24000630679}") = "iOS_Photos", "Assembly-CSharp-firstpass.csproj", "{558CA68A-B73D-F0A7-E680-435A54547FFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{558CA68A-B73D-F0A7-E680-435A54547FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{558CA68A-B73D-F0A7-E680-435A54547FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{558CA68A-B73D-F0A7-E680-435A54547FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{558CA68A-B73D-F0A7-E680-435A54547FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

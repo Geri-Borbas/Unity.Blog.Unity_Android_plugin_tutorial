@@ -1,1 +1,3 @@
-Unity native plugin (iOS / Android) example / boilerplate project.
+**Unity native plugin (iOS / Android) example / boilerplate project**. Unlike many sources around the webs, this Android plugin does not touch `UnityPlayerActivity`. More on [**Unity Android Plugin Tutorial 1.** Fundamentals](http://eppz.eu/blog/unity-android-plugin-tutorial-1/).
+
+To start inspect files just start with `Assets/Plugins/eppz! Alert/Example/eppz! Alert Example.unity` scene. Note that the iOS / Android **plugin projects also included** in the project root in their respective folders (Xcode project is at `iOS/EPPZ_Alert_iOS`, Android Studio project is at `Android/EPPZ_Alert_Android`).

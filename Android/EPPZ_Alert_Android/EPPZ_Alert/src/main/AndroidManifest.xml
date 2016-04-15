@@ -1,0 +1,11 @@
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eppz.plugins">
+
+    <application
+        android:allowBackup="true"
+        android:label="EPPZ_Alert_Android"
+        android:supportsRtl="true">
+    </application>
+
+</manifest>
