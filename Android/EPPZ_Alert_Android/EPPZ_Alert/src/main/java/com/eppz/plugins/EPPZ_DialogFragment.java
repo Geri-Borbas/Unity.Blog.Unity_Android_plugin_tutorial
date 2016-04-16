@@ -15,6 +15,7 @@ package com.eppz.plugins;
 
 // Features.
 import android.content.Context;
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -61,18 +62,6 @@ public class EPPZ_DialogFragment extends DialogFragment
     }
 
     @Override
-    public void onAttach(Context context)
-    {
-        super.onAttach(context);
-
-        // Check if listener implemented the callback method.
-        try
-        { listener = (Listener)context; }
-        catch (ClassCastException e)
-        { throw new ClassCastException("`"+context.toString()+"` must implement `EPPZ_DialogFragment.Listener` interface."); }
-    }
-
-    @Override
     public Dialog onCreateDialog(Bundle savedInstanceState)
     {
         Log.i(TAG, TAG+".onCreateDialog(`"
@@ -80,6 +69,10 @@ public class EPPZ_DialogFragment extends DialogFragment
                 +getArguments().getString(MESSAGE)+"`, `"
                 +getArguments().getString(POSITIVE_BUTTON_TITLE)+"`, `"
                 +getArguments().getString(NEGATIVE_BUTTON_TITLE)+"`)");
+
+        // Get main fragment.
+        EPPZ_Alert alert = (EPPZ_Alert)getFragmentManager().findFragmentByTag(EPPZ_Alert.TAG);
+        listener = (Listener)alert;
 
         // Build dialog.
         return new AlertDialog.Builder(getActivity())

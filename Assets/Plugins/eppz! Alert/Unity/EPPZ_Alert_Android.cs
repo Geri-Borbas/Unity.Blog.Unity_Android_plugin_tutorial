@@ -29,19 +29,13 @@ namespace EPPZ.Plugins
 		#region Native setup
 
 		AndroidJavaClass _class;
-		AndroidJavaObject instance { get { return _class.CallStatic<AndroidJavaObject>("getInstance"); } }
+		AndroidJavaObject instance { get { return _class.GetStatic<AndroidJavaObject>("instance"); } }
 
 		override protected void Setup()
 		{
-			Debug.Log("EPPZ_Alert_Android.Setup()");
-
-			// Get Unity player `Activity`.
-			AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-			AndroidJavaObject unityPlayerActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-
 			// Start plugin `Fragment`.
 			_class = new AndroidJavaClass("com.eppz.plugins.EPPZ_Alert");
-			_class.CallStatic("start", unityPlayerActivity, gameObjectName);
+			_class.CallStatic("start", gameObjectName);
 		}
 
 		#endregion

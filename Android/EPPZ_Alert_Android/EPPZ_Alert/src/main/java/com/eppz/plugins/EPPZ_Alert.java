@@ -32,29 +32,24 @@ public class EPPZ_Alert extends Fragment
 
 
     // Constants.
-    private static final String TAG = "EPPZ_Alert_Fragment";
+    public static final String TAG = "EPPZ_Alert_Fragment";
     private static final String CALLBACK_METHOD_NAME = "AlertDidFinishWithResult";
 
-    // Unity context.
-    static Activity _unityPlayerActivity;
-    static String _gameObjectName;
-
     // Singleton instance.
-    static EPPZ_Alert _instance;
-    static EPPZ_Alert getInstance() { return _instance; }
+    public static EPPZ_Alert instance;
+
+    // Unity context.
+    String gameObjectName;
 
 
     // region Creation
 
-    public static void start(Context unityPlayerActivity, String gameObjectName)
+    public static void start(String gameObjectName)
     {
-        // Store Unity context.
-        _unityPlayerActivity = (Activity)unityPlayerActivity;
-        _gameObjectName = gameObjectName;
-
         // Instantiate and add to Unity Player Activity.
-        _instance = new EPPZ_Alert();
-        _unityPlayerActivity.getFragmentManager().beginTransaction().add(_instance, TAG).commit();
+        instance = new EPPZ_Alert();
+        instance.gameObjectName = gameObjectName; // Store `GameObject` reference
+        UnityPlayer.currentActivity.getFragmentManager().beginTransaction().add(instance, EPPZ_Alert.TAG).commit();
     }
 
     @Override
@@ -80,7 +75,7 @@ public class EPPZ_Alert extends Fragment
                 positiveButtonTitle,
                 negativeButtonTitle
         );
-        dialogFragment.show(_unityPlayerActivity.getFragmentManager(), title);
+        dialogFragment.show(getFragmentManager(), title);
     }
 
     @Override
@@ -100,7 +95,7 @@ public class EPPZ_Alert extends Fragment
     void SendUnityMessage(String methodName, String parameter)
     {
         Log.i(TAG, TAG+"SendUnityMessage(`"+methodName+"`, `"+parameter+"`)");
-        UnityPlayer.UnitySendMessage(_gameObjectName, methodName, parameter);
+        UnityPlayer.UnitySendMessage(gameObjectName, methodName, parameter);
     }
 
     // endregion

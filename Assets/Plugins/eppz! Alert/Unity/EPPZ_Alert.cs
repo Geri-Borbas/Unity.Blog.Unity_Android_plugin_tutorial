@@ -34,8 +34,8 @@ namespace EPPZ.Plugins
 			// Get plugin class for the actual platform.
 			#if UNITY_IPHONE
 			plugin = (Application.isEditor)
-			? (EPPZ_Alert)new EPPZ_Alert_Editor(gameObjectName)
-			: (EPPZ_Alert)new EPPZ_Alert_iOS(gameObjectName);
+				? (EPPZ_Alert)new EPPZ_Alert_Editor(gameObjectName)
+				: (EPPZ_Alert)new EPPZ_Alert_iOS(gameObjectName);
 			#elif UNITY_ANDROID
 			plugin = (Application.isEditor)
 				? (EPPZ_Alert)new EPPZ_Alert_Editor(gameObjectName)
