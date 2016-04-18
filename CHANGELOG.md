@@ -1,3 +1,10 @@
+* 1.2.0
+
+	+ iOS Plugin refactor / implement
+		+ Project wrapped into a library
+		+ `UIAlertController` implementation
+		+ Unity plugin folder / files regrouping
+
 * 1.1.0
 
 	+ Some refactor

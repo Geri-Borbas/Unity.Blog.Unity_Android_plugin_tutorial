@@ -1,0 +1,268 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55B03B4A1CC43EFB006BABE9 /* eppz! Alert iOS.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAFCF64D1C73EC3700912759 /* eppz! Alert iOS.a */; };
+		55B03B5E1CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55B03B591CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm */; };
+		55B03B5F1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B03B5B1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m */; };
+		55B03B601CC44241006BABE9 /* NSString+Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B03B5D1CC44241006BABE9 /* NSString+Unity.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55B03B491CC43EEA006BABE9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/../../Assets/Plugins/eppz! Alert";
+			dstSubfolderSpec = 0;
+			files = (
+				55B03B4A1CC43EFB006BABE9 /* eppz! Alert iOS.a in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		55B03B591CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EPPZ_Alert_iOS_C.mm; sourceTree = "<group>"; };
+		55B03B5A1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPPZ_Alert_iOS_ObjC.h; sourceTree = "<group>"; };
+		55B03B5B1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPPZ_Alert_iOS_ObjC.m; sourceTree = "<group>"; };
+		55B03B5C1CC44241006BABE9 /* NSString+Unity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Unity.h"; sourceTree = "<group>"; };
+		55B03B5D1CC44241006BABE9 /* NSString+Unity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Unity.m"; sourceTree = "<group>"; };
+		FAFCF64D1C73EC3700912759 /* eppz! Alert iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "eppz! Alert iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFCF64A1C73EC3700912759 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFCF6241C73E48A00912759 = {
+			isa = PBXGroup;
+			children = (
+				FAFCF64E1C73EC3700912759 /* EPPZ_Alert_iOS */,
+				FAFCF62E1C73E48A00912759 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFCF62E1C73E48A00912759 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFCF64D1C73EC3700912759 /* eppz! Alert iOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFCF64E1C73EC3700912759 /* EPPZ_Alert_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				55B03B591CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm */,
+				55B03B5A1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.h */,
+				55B03B5B1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m */,
+				55B03B5C1CC44241006BABE9 /* NSString+Unity.h */,
+				55B03B5D1CC44241006BABE9 /* NSString+Unity.m */,
+			);
+			path = EPPZ_Alert_iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFCF64C1C73EC3700912759 /* EPPZ_Alert_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFCF6531C73EC3700912759 /* Build configuration list for PBXNativeTarget "EPPZ_Alert_iOS" */;
+			buildPhases = (
+				FAFCF6491C73EC3700912759 /* Sources */,
+				FAFCF64A1C73EC3700912759 /* Frameworks */,
+				55B03B491CC43EEA006BABE9 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPPZ_Alert_iOS;
+			productName = EPPZPlugins;
+			productReference = FAFCF64D1C73EC3700912759 /* eppz! Alert iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFCF6251C73E48A00912759 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "eppz! mobile";
+				TargetAttributes = {
+					FAFCF64C1C73EC3700912759 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FAFCF6281C73E48A00912759 /* Build configuration list for PBXProject "EPPZ_Alert_iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FAFCF6241C73E48A00912759;
+			productRefGroup = FAFCF62E1C73E48A00912759 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFCF64C1C73EC3700912759 /* EPPZ_Alert_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFCF6491C73EC3700912759 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55B03B601CC44241006BABE9 /* NSString+Unity.m in Sources */,
+				55B03B5E1CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm in Sources */,
+				55B03B5F1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FAFCF6341C73E48B00912759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FAFCF6351C73E48B00912759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAFCF6541C73EC3700912759 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "eppz! Alert iOS";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FAFCF6551C73EC3700912759 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "eppz! Alert iOS";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFCF6281C73E48A00912759 /* Build configuration list for PBXProject "EPPZ_Alert_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFCF6341C73E48B00912759 /* Debug */,
+				FAFCF6351C73E48B00912759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFCF6531C73EC3700912759 /* Build configuration list for PBXNativeTarget "EPPZ_Alert_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFCF6541C73EC3700912759 /* Debug */,
+				FAFCF6551C73EC3700912759 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFCF6251C73E48A00912759 /* Project object */;
+}

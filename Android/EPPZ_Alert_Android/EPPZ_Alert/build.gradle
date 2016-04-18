@@ -36,23 +36,31 @@ dependencies {
 }
 
 android.libraryVariants.all { variant ->
-    task(
-            "copy${variant.name.capitalize()}PluginArchive",
-            dependsOn: "assemble${variant.name.capitalize()}",
-            type: Copy)
-            {
-                String assetFolder = "Assets/Plugins/eppz! Alert/Android";
-                String archiveName = "${project.name}-${variant.name}.aar"
-                String aarFolder = "${buildDir.getPath()}/outputs/aar/"
-                String pluginFolder = "${rootDir.getPath()}/../../${assetFolder}"
 
-                logger.lifecycle("${variant.name.capitalize()} AAR Folder: ${aarFolder}")
-                logger.lifecycle("${variant.name.capitalize()} Plugin Folder: ${pluginFolder}")
-                logger.lifecycle("${variant.name.capitalize()} Archive name: ${archiveName}")
+    // Task names.
+    String variantName = "${variant.name.capitalize()}";
+    String deployTaskGroup = "plugin";
+    String deployTaskName = "deploy${variantName}PluginArchive";
+    String dependencyTaskName = "assemble${variantName}";
 
-                from("${aarFolder}")
-                into("${pluginFolder}")
-                include("${archiveName}")
-                rename("${archiveName}", "eppz! Alert.aar")
-            }
+    // Source.
+    String sourceAARFolder = "${buildDir.getPath()}/outputs/aar/";
+    String sourceAARName = "${project.name}-${variant.name}.aar";
+
+    // Target.
+    String targetAssetFolder = "Assets/Plugins/eppz! Alert";
+    String targetAARFolder = "${rootDir.getPath()}/../../${targetAssetFolder}";
+    String targetAARName = "eppz! Alert Android.aar";
+
+    // Create task.
+    task(deployTaskName, dependsOn: dependencyTaskName, type: Copy) {
+        logger.lifecycle("${variant.name.capitalize()} AAR Folder: ${sourceAARFolder}")
+        logger.lifecycle("${variant.name.capitalize()} Target AAR Folder: ${targetAARFolder}")
+        logger.lifecycle("${variant.name.capitalize()} Target AAR name: ${targetAARName}")
+
+        from(sourceAARFolder)
+        into(targetAARFolder)
+        include(sourceAARName)
+        rename(sourceAARName, targetAARName)
+    }.group = deployTaskGroup;
 }

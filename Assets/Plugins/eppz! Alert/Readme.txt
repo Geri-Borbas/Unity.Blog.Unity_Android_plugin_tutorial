@@ -1,0 +1,1 @@
+In order to import every class of the plugin properly, add "-ObjC" to "Other Linker Flags" in Build Settings of the resulting Xcode project.
