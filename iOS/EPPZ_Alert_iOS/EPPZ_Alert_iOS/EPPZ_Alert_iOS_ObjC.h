@@ -13,7 +13,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "NSString+Unity.h"
+#import "UnityString.m"
 
 
 extern void UnitySendMessage(const char *, const char *, const char *);

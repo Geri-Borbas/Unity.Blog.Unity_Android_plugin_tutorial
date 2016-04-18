@@ -40,7 +40,7 @@ const char* callbackMethodName = "AlertDidFinishWithResult";
 
 +(EPPZ_Alert_iOS*)instanceForGameObjectName:(const char*) gameObjectName_
 {
-    NSString *gameObjectName = [NSString stringWithUnityString:gameObjectName_];
+    NSString *gameObjectName = NSStringFromUnityString(gameObjectName_);
     
     // Return cached instance (if any).
     if ([self.instancesForGameObjectNames.allKeys containsObject:gameObjectName])
@@ -62,10 +62,10 @@ const char* callbackMethodName = "AlertDidFinishWithResult";
         cancelButtonTitle:(const char*) cancelButtonTitle_
 {
     // Text.
-    NSString *title = [NSString stringWithUnityString:title_];
-    NSString *message = [NSString stringWithUnityString:message_];
-    NSString *buttonTitle = [NSString stringWithUnityString:buttonTitle_];
-    NSString *cancelButtonTitle = [NSString stringWithUnityString:cancelButtonTitle_];
+    NSString *title = NSStringFromUnityString(title_);
+    NSString *message = NSStringFromUnityString(message_);
+    NSString *buttonTitle = NSStringFromUnityString(buttonTitle_);
+    NSString *cancelButtonTitle = NSStringFromUnityString(cancelButtonTitle_);
     
     // Setup.
     UIAlertController* alert = [UIAlertController
@@ -89,9 +89,9 @@ const char* callbackMethodName = "AlertDidFinishWithResult";
 
 -(void)handleAction:(UIAlertAction*) action
 {
-    UnitySendMessage(self.gameObjectName.unityString,
+    UnitySendMessage(UnityStringFromNSString(self.gameObjectName),
                      callbackMethodName,
-                     action.title.unityString);
+                     UnityStringFromNSString(action.title));
 }
 
 -(UIViewController*)topMostViewController

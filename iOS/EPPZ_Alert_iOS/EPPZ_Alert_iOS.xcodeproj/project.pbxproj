@@ -10,7 +10,7 @@
 		55B03B4A1CC43EFB006BABE9 /* eppz! Alert iOS.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = FAFCF64D1C73EC3700912759 /* eppz! Alert iOS.a */; };
 		55B03B5E1CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm in Sources */ = {isa = PBXBuildFile; fileRef = 55B03B591CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm */; };
 		55B03B5F1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B03B5B1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m */; };
-		55B03B601CC44241006BABE9 /* NSString+Unity.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B03B5D1CC44241006BABE9 /* NSString+Unity.m */; };
+		55B03B601CC44241006BABE9 /* UnityString.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B03B5D1CC44241006BABE9 /* UnityString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +30,7 @@
 		55B03B591CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EPPZ_Alert_iOS_C.mm; sourceTree = "<group>"; };
 		55B03B5A1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPPZ_Alert_iOS_ObjC.h; sourceTree = "<group>"; };
 		55B03B5B1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPPZ_Alert_iOS_ObjC.m; sourceTree = "<group>"; };
-		55B03B5C1CC44241006BABE9 /* NSString+Unity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Unity.h"; sourceTree = "<group>"; };
-		55B03B5D1CC44241006BABE9 /* NSString+Unity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Unity.m"; sourceTree = "<group>"; };
+		55B03B5D1CC44241006BABE9 /* UnityString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityString.m; sourceTree = "<group>"; };
 		FAFCF64D1C73EC3700912759 /* eppz! Alert iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "eppz! Alert iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -68,8 +67,7 @@
 				55B03B591CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm */,
 				55B03B5A1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.h */,
 				55B03B5B1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m */,
-				55B03B5C1CC44241006BABE9 /* NSString+Unity.h */,
-				55B03B5D1CC44241006BABE9 /* NSString+Unity.m */,
+				55B03B5D1CC44241006BABE9 /* UnityString.m */,
 			);
 			path = EPPZ_Alert_iOS;
 			sourceTree = "<group>";
@@ -130,7 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55B03B601CC44241006BABE9 /* NSString+Unity.m in Sources */,
+				55B03B601CC44241006BABE9 /* UnityString.m in Sources */,
 				55B03B5E1CC44241006BABE9 /* EPPZ_Alert_iOS_C.mm in Sources */,
 				55B03B5F1CC44241006BABE9 /* EPPZ_Alert_iOS_ObjC.m in Sources */,
 			);

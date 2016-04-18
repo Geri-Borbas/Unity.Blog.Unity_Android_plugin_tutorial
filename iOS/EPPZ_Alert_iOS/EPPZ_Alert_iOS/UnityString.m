@@ -11,23 +11,19 @@
 // OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 //
 
-#import "NSString+Unity.h"
+#import <Foundation/Foundation.h>
 
 
-@implementation NSString (Unity)
-
-+(NSString*)stringWithUnityString:(const char*) unityString_
+char* UnityStringFromNSString(NSString* string)
 {
-    if (unityString_ == nil) return [NSString new];
-    return [NSString stringWithUTF8String:unityString_];
-}
-
--(char*)unityString
-{
-    const char* cString = self.UTF8String;
+    const char* cString = string.UTF8String;
     char* _unityString = (char*)malloc(strlen(cString) + 1);
     strcpy(_unityString, cString);
     return _unityString;
 }
 
-@end
+NSString* NSStringFromUnityString(const char* unityString_)
+{
+    if (unityString_ == nil) return [NSString new];
+    return [NSString stringWithUTF8String:unityString_];
+}

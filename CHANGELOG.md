@@ -1,3 +1,8 @@
+* 1.2.1
+
+	+ `UnityString.m`
+		+ Removed Category project dependency
+
 * 1.2.0
 
 	+ iOS Plugin refactor / implement
